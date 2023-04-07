@@ -1,0 +1,57 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Month name */
+#month {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+/* Calender */
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto repeat(5, 1fr);
+}
+
+/* Weekday header */
+.weekday-header {
+  width: 10vw;
+  height: 3vh;
+  line-height: 3vh;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+/* All calender dates */
+.calendar-day {
+  width: 10vw;
+  height: 12vh;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+/* Today */
+.today {
+  color: red;
+}
+
+/* Dates in previous month and next month */
+.previous-month,
+.next-month {
+  background-color: #e4e4e4;
+  color: rgb(117, 117, 117);
+}
+
+/* Dates selected */
+.calendar-day.workout {
+  background-color: #667ccb;
+  color: white;
+}

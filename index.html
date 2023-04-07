@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>William's Workout Tracker</title>
+  </head>
+  <body>
+    <main>
+      <h1>William's Workout Tracker</h1>
+      <form class="input-form" id="inputForm" name="inputForm">
+        <label for="target"
+          >Set your target number of workout days per week:</label
+        >
+        <input type="number" id="target" min="1" max="7" value="0" />
+        <button id="setTarget">Set Target</button>
+      </form>
+      <h2 id="achievement" style="display: none">
+        🎉Congratulations! You've reached your target!🎉
+      </h2>
+      <div id="month"></div>
+      <div id="calendar">
+        <div class="weekday-header">Sun</div>
+        <div class="weekday-header">Mon</div>
+        <div class="weekday-header">Tue</div>
+        <div class="weekday-header">Wed</div>
+        <div class="weekday-header">Thu</div>
+        <div class="weekday-header">Fri</div>
+        <div class="weekday-header">Sat</div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
