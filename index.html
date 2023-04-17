@@ -17,19 +17,29 @@
         <input type="number" id="target" min="1" max="7" value="0" />
         <button id="setTarget">Set Target</button>
       </form>
-      <h2 id="achievement" style="display: none">
-        🎉Congratulations! You've reached your target!🎉
-      </h2>
+      <h2 id="achievement" style="display: none"></h2>
       <div id="month"></div>
-      <div id="calendar">
-        <div class="weekday-header">Sun</div>
-        <div class="weekday-header">Mon</div>
-        <div class="weekday-header">Tue</div>
-        <div class="weekday-header">Wed</div>
-        <div class="weekday-header">Thu</div>
-        <div class="weekday-header">Fri</div>
-        <div class="weekday-header">Sat</div>
-      </div>
+      <table id="calendar">
+        <thead>
+          <tr>
+            <th class="weekday-header">Sun</th>
+            <th class="weekday-header">Mon</th>
+            <th class="weekday-header">Tue</th>
+            <th class="weekday-header">Wed</th>
+            <th class="weekday-header">Thu</th>
+            <th class="weekday-header">Fri</th>
+            <th class="weekday-header">Sat</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+          <tr id="weekOne"></tr>
+          <tr id="weekTwo"></tr>
+          <tr id="weekThree"></tr>
+          <tr id="weekFour"></tr>
+          <tr id="weekFive"></tr>
+          <tr id="weekSix"></tr>
+        </tbody>
+      </table>
     </main>
     <script src="scripts/script.js"></script>
   </body>

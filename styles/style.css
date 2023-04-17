@@ -3,6 +3,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 /* Month name */
@@ -13,14 +14,12 @@ main {
 
 /* Calender */
 #calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto repeat(5, 1fr);
+  border-collapse: collapse;
 }
 
 /* Weekday header */
 .weekday-header {
-  width: 10vw;
+  width: 8.5vw;
   height: 3vh;
   line-height: 3vh;
   text-align: center;
@@ -31,13 +30,16 @@ main {
 
 /* All calender dates */
 .calendar-day {
-  width: 10vw;
+  /* Remove the default styling of HTML button */
+  all: unset;
+  display: inherit;
+  width: 8.5vw;
   height: 12vh;
-  line-height: 30px;
   text-align: center;
   border: 1px solid #ccc;
   cursor: pointer;
 }
+
 /* Today */
 .today {
   color: red;
@@ -54,4 +56,8 @@ main {
 .calendar-day.workout {
   background-color: #667ccb;
   color: white;
+}
+
+.weekly-achievement {
+  width: 10vw;
 }
