@@ -15,7 +15,7 @@ function domReady() {
 
   //For testing different month
   //Example January: setMonth = 1
-  var setMonth = 1;
+  var setMonth;
   var targetDays;
 
   //Form handle
