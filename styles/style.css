@@ -61,3 +61,12 @@ main {
 .weekly-achievement {
   width: 10vw;
 }
+
+.hide {
+  display: none;
+}
+
+footer {
+  padding-top: 1%;
+  padding-left: 2%;
+}

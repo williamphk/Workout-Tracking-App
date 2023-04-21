@@ -12,12 +12,15 @@
       <h1>William's Workout Tracker</h1>
       <form class="input-form" id="inputForm" name="inputForm">
         <label for="target"
-          >Set your target number of workout days per week:</label
+          >1. Set your target number of workout days per week:</label
         >
         <input type="number" id="target" min="1" max="7" value="0" />
         <button id="setTarget">Set Target</button>
       </form>
-      <h2 id="achievement" style="display: none"></h2>
+      <p>
+        2. Click on the date below to indicate which date you have work-out!
+      </p>
+      <h2 id="achievement" class="hide"></h2>
       <div id="month"></div>
       <table id="calendar">
         <thead>
@@ -41,6 +44,7 @@
         </tbody>
       </table>
     </main>
+    <footer>© Copyright William Poon, 2023</footer>
     <script src="scripts/script.js"></script>
   </body>
 </html>

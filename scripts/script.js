@@ -312,10 +312,10 @@ function domReady() {
     //console.log(targetDays);
     //Check if the target is reached in every weeks
     if (workoutDays.every((a) => a.length >= targetDays)) {
-      achievement.style.display = "block";
+      achievement.classList.remove("hide");
       achievement.innerHTML = `🎉Congratulations! You've reached your target for ${getMonthName()}!🎉`;
     } else {
-      achievement.style.display = "none";
+      achievement.classList.add("hide");
     }
   }
 
